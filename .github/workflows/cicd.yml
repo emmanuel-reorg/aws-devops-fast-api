@@ -1,9 +1,10 @@
 name: Deploy fastapi to AWS ECS
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
+    branches: [ "main" ]
 
 jobs:
   deploy:
@@ -11,6 +12,7 @@ jobs:
     environment:
       name: develop
     runs-on: ubuntu-latest
+    if: ${{ github.event.pull_request.merged == true }}
 
     steps:
     - name: Checkout code
