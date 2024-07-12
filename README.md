@@ -4,7 +4,7 @@
 3. Run `poetry shell` to activate the virtual environment
 4. Run `fastapi dev main.py` to start the server
 
-# How Deploy this app usinbg CI/CD wutg Github Actions
+# How Deploy this app using CI/CD Github Actions
 1. The actions the execute the pipeline is https://github.com/emmanuel-reorg/reorg-fastapi/actions
 2. In this case of use we are using Gitflow Branching model this helps organize workflow and collaboration in a Git repository. Here, we'll describe a GitHub branching model using main, develop, and feature branches.
 3. The Steps to trigger the actions are:
